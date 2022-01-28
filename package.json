@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://github.com/Pavel07-chyden.github.io/PomodoroClock",
+  "homepage": "https://Pavel07-chyden.github.io/PomodoroClock",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
