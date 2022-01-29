@@ -122,8 +122,6 @@ const App = () => {
     return (
         
         <div className="container" id="clock">
-            <AppSecf/>
-
             <h1>Pomodoro Clock</h1>
             <div className="time-wrapper">
                 <h2>{timerType}</h2>
