@@ -11,21 +11,6 @@ const App = () => {
     const [pause, setPause] = useState(true);
     const starter = useRef<any>(null);
 
-    // const [time, setTime] = useState<number>(0);
-    // const [start, setStart] = useState<boolean>(false);
-
-    // useEffect(()=> {
-    //     let interval:any = null; 
-
-    //     if(start){
-    //         interval = setInterval(()=>{
-    //             setTime(prevTime => prevTime + 10) }, 10)
-    //     } else {
-    //         clearInterval( interval)
-    //     }
-    //     return ()=> clearInterval(interval)
-    // }, [start])
-
     const changeTime = () => {
         if (timeLeft > 0) {
             setTimeLeft((timeLeft) => timeLeft - 1);
