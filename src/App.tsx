@@ -1,6 +1,5 @@
 import './styles.css';
 import React, { useEffect, useRef, useState } from "react";
-import AppSecf from './AppSecf';
 
 
 const App = () => {
@@ -120,7 +119,7 @@ const App = () => {
         return minutes + ":" + seconds;
     };
     return (
-        
+
         <div className="container" id="clock">
             <h1>Pomodoro Clock</h1>
             <div className="time-wrapper">
@@ -136,7 +135,7 @@ const App = () => {
                 <div className="length">
                     <h2>Break Length</h2>
                     <div className="length-control">
-                        <input className='length-button' onClick={onBreakIncreClick } type="button" value="↑" />
+                        <input className='length-button' onClick={onBreakIncreClick} type="button" value="↑" />
                         <h3>{breakTime}</h3>
                         <input className='length-button' onClick={onBreakDecreClick} type="button" value="↓" />
                     </div>
