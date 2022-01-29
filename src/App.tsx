@@ -1,7 +1,10 @@
 import './styles.css';
 import React, { useEffect, useRef, useState } from "react";
+import AppSecf from './AppSecf';
+
 
 const App = () => {
+
     const [breakTime, setBreakTime] = useState<number>(5);
     const [sessionTime, setSessionTime] = useState<number>(25);
     const [timerType, setTimerType] = useState<string>("SESSION");
@@ -9,6 +12,20 @@ const App = () => {
     const [pause, setPause] = useState(true);
     const starter = useRef<any>(null);
 
+    // const [time, setTime] = useState<number>(0);
+    // const [start, setStart] = useState<boolean>(false);
+
+    // useEffect(()=> {
+    //     let interval:any = null; 
+
+    //     if(start){
+    //         interval = setInterval(()=>{
+    //             setTime(prevTime => prevTime + 10) }, 10)
+    //     } else {
+    //         clearInterval( interval)
+    //     }
+    //     return ()=> clearInterval(interval)
+    // }, [start])
 
     const changeTime = () => {
         if (timeLeft > 0) {
@@ -103,7 +120,10 @@ const App = () => {
         return minutes + ":" + seconds;
     };
     return (
+        
         <div className="container" id="clock">
+            <AppSecf/>
+
             <h1>Pomodoro Clock</h1>
             <div className="time-wrapper">
                 <h2>{timerType}</h2>
