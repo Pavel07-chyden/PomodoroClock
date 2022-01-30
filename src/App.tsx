@@ -1,5 +1,6 @@
 import './styles.css';
 import React, { useEffect, useRef, useState } from "react";
+import AppC from './AppCounter';
 
 
 const App = () => {
@@ -106,6 +107,7 @@ const App = () => {
     return (
 
         <div className="container" id="clock">
+            <AppC/>
             <h1>Pomodoro Clock</h1>
             <div className="time-wrapper">
                 <h2>{timerType}</h2>
@@ -144,3 +146,48 @@ const App = () => {
 };
 
 export default App;
+
+
+// import { countReset } from "console";
+// import React, { useEffect, useRef, useState } from "react";
+
+// const AppC=()=>{
+// function makeCounter() {
+//     let count = 0;
+//     return {
+//         count: function(){
+//             count ++
+//             console.log(count);}  }}
+//             var count = makeCounter()
+//             var coun2 = makeCounter()
+//             count.count() // 1
+//             count.count() // 2
+//             coun2.count() //1
+//             coun2.count() //2
+
+
+// var obj: any = {}
+// let p1 = "dimich"
+// let p2 = "sasha"
+
+// obj[p1] = 33
+// obj[p2] = 30 
+// obj[obj] = 100 
+// console.log(obj.p1); // undefined 
+// console.log(obj.dimich); // 33 
+// console.log(obj.sasha); // 30 
+
+// console.log(obj[p2]); //  30
+// return (
+//     <div>
+
+//     </div>
+// )
+// }
+
+// export default AppC;
+
+
+
+
+
