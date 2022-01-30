@@ -1,6 +1,5 @@
 import './styles.css';
 import React, { useEffect, useRef, useState } from "react";
-import AppC from './AppCounter';
 
 
 const App = () => {
